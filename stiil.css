@@ -1,0 +1,13 @@
+body {background-image:url('pildid/taust.jpg');}
+h1{color:rgb(231, 218, 205);
+font-family: 'Courier New', monospace;
+font-size:64px;
+text-align: center;
+}
+@keyframes blink {
+    0% {text-shadow: 0 0 7px black;}
+    50% {text-shadow: 0 0 1px black;}
+    100% {text-shadow: 0 0 7px black;}
+}
+
+h1{animation: blink 1500ms linear infinite}
