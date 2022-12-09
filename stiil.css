@@ -1,13 +1,95 @@
-body {background-image:url('pildid/taust.jpg');}
-h1{color:rgb(231, 218, 205);
-font-family: 'Courier New', monospace;
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    background-image: url('pildid/taust.jpg');
+    backdrop-filter: blur(5px);
+    background-size: 100% 100%;
+}
+h1{color:rgb(236, 233, 223);
+font-family: 'Sans-Serif', Arial, Helvetica, sans-serif;
 font-size:64px;
 text-align: center;
+animation: blink 1000ms linear infinite
 }
 @keyframes blink {
     0% {text-shadow: 0 0 7px black;}
     50% {text-shadow: 0 0 1px black;}
     100% {text-shadow: 0 0 7px black;}
 }
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 
-h1{animation: blink 1500ms linear infinite}
+#pilt1{
+    width: 200px;
+    display: -webkit-box;
+    margin-right: auto;
+    border-radius: 30%;
+    animation: shake 2000ms linear infinite
+}
+
+#pilt2{
+    width: 200px;
+    display: -webkit-box;
+    margin-left: auto;
+    border-radius: 30%;
+    animation: shake 2000ms linear infinite
+}
+
+#tabel{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80%;
+    border: 0px;
+    border-collapse: collapse;
+}
+
+a{
+    color:rgba(247, 240, 232, 0.895);
+    font-family: 'Sans-Serif', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-shadow: 0 0 3px black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#pealkiri2{
+    color: rgb(18, 17, 17);
+    font-family: 'sans-serif', Tahoma;
+    font-size: 36px;
+    text-align: center;
+}
+
+#lõik{
+    color: black;
+    font-family: 'sans-serif', Tahoma;
+    font-size: 30px;
+    text-align: center;
+}
+
+#pilt{
+    height: 150px;
+    border-radius: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
